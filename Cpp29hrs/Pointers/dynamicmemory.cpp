@@ -42,4 +42,8 @@ delete ptr1;
  cout<<ptr_num1<<" "<<*ptr_num1<<endl;// mem addr 77
  delete ptr_num1;
  cout<<ptr_num1<<" "<<*ptr_num1<<endl; // bad practice after deleting ypu are trying to access it again it will show garbage val
+  ptr_num1= nullptr;
+  // reuse
+  ptr_num1= new int(78);
+  cout<<*ptr_num1;
 }
